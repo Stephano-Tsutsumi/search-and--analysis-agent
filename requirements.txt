@@ -1,0 +1,10 @@
+pydantic>=2.7.2
+pydantic-ai>=0.1.0
+python-dotenv>=1.0.0
+rich>=13.3.5
+googlesearch-python>=1.2.3
+yfinance>=0.2.40
+playwright>=1.49.0
+nest_asyncio>=1.6.0
+psutil>=6.1.1
+mcp>=1.7.1 
