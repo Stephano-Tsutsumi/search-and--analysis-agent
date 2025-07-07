@@ -1,0 +1,115 @@
+{
+  "timestamp": "2025-07-07T13:13:02.174395",
+  "recommendations": [
+    {
+      "symbol": "SPG",
+      "company_name": "SPG",
+      "current_price": 0.0,
+      "confidence_score": 0.6428571428571429,
+      "reasoning": "Headline sentiment: 0.64. Sample: ['Citi Maintains Neutral Rating on Simon Property Group (SPG)', 'Angel Reese, Alyssa Thomas and 10 more predicted All-Star reserves', \"NBA insider doesn't expect sought after all-defensive Pelican to be traded this offseason\"]",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "BHP",
+      "company_name": "BHP",
+      "current_price": 0.0,
+      "confidence_score": 0.375,
+      "reasoning": "Headline sentiment: 0.38. Sample: ['Ten Years After Brazil Mine Disaster, Pollution Persists', 'BHP inks charter contracts with COSCO for ammonia dual-fuelled vessels', 'For Sale: A New 1000 BHP Chevrolet ZZ632/1000 Crate Engine']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "HON",
+      "company_name": "HON",
+      "current_price": 0.0,
+      "confidence_score": 0.3181818181818182,
+      "reasoning": "Headline sentiment: 0.32. Sample: ['Foxconn announces Q2 revenue up 15.82%', 'Foxconn and Kawasaki team up on AI medical robot, eye 2026 launch', 'Warehouse Automation Trend Is Positive For These Stocks']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "VICI",
+      "company_name": "VICI",
+      "current_price": 0.0,
+      "confidence_score": 0.3076923076923077,
+      "reasoning": "Headline sentiment: 0.31. Sample: ['Mirae Asset Global Investments Co. Ltd. Raises Stake in VICI Properties Inc. (NYSE:VICI)', 'Bessemer Group Inc. Buys 1,572 Shares of VICI Properties Inc. (NYSE:VICI)', 'VICI Properties Inc. (NYSE:VICI) Shares Bought by Allspring Global Investments Holdings LLC']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "UPS",
+      "company_name": "UPS",
+      "current_price": 0.0,
+      "confidence_score": 0.28,
+      "reasoning": "Headline sentiment: 0.28. Sample: ['UPS Makes 117-Year History With Employees Decision', 'DJI gets serious about portable power', 'Apple Arcade Receives Four More Games, Including Angry Birds Bounce']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "AAPL",
+      "company_name": "AAPL",
+      "current_price": 0.0,
+      "confidence_score": 0.24,
+      "reasoning": "Headline sentiment: 0.24. Sample: ['Apple Inc. (AAPL): People Are Tired Of The Stock Buybacks, Says Jim Cramer', \"Here's How to Listen to Apple's Upcoming Earnings Call With Tim Cook\", 'One Apple Bear Just Threw in the Towel With This Upgrade. Is It Time to Buy AAPL Stock?']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "GOOGL",
+      "company_name": "GOOGL",
+      "current_price": 0.0,
+      "confidence_score": 0.24,
+      "reasoning": "Headline sentiment: 0.24. Sample: ['Alphabet (GOOGL) Strikes Deal to Purchase Clean Fusion Power from Commonwealth Fusion Systems', 'Google (GOOGL) Offers New EU Proposal to Avoid Antitrust Penalty', 'Meta vs. Nvidia: How to play Mag 7 in the second half of 2025']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "C",
+      "company_name": "C",
+      "current_price": 0.0,
+      "confidence_score": 0.24,
+      "reasoning": "Headline sentiment: 0.24. Sample: ['How Nintendo locked down the Switch 2\u2019s USB-C port and broke third-party docking', 'Forget Anker, This UGREEN USB-C Charger Block Is Going for Peanuts in Amazon\u2019s Fourth of July Deal', 'Lenovo Chromebook Plus 14 review: the new king of Chromebooks']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "SLB",
+      "company_name": "SLB",
+      "current_price": 0.0,
+      "confidence_score": 0.23076923076923078,
+      "reasoning": "Headline sentiment: 0.23. Sample: ['J.P. Morgan Reiterated a Buy Rating on Schlumberger Limited (SLB)', 'Schlumberger JV OneSubsea Secures Contract for Northern Lights CCS Project Expansion in Norway', 'Understanding Carbon Capture - Science Or Shell Game']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    },
+    {
+      "symbol": "AMZN",
+      "company_name": "AMZN",
+      "current_price": 0.0,
+      "confidence_score": 0.2,
+      "reasoning": "Headline sentiment: 0.20. Sample: ['Meta vs. Nvidia: How to play Mag 7 in the second half of 2025', 'Amazon (AMZN) Price Target Raised to $250 at Truist on Strong Q2 Outlook', 'Should You be Confident in Amazon\u2019s (AMZN) Ability to Deliver Years of Solid Revenue Growth and Margin Expansion?']",
+      "sector": "Unknown",
+      "market_cap": null,
+      "pe_ratio": null,
+      "trend_alignment": null
+    }
+  ]
+}

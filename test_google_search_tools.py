@@ -7,7 +7,7 @@ from tools import GoogleSearchTool
 
 # Load environment variables from .env file
 load_dotenv()
-api_key=os.getenv('OPENAI_API_KEY')
+api_key = os.getenv('OPENAI_API_KEY')
 
 google_search_agent = Agent(
     name='GoogleSearchAgent',
@@ -20,5 +20,5 @@ google_search_agent = Agent(
     tools=[GoogleSearchTool.google_search]
 )
 
-response = google_search_agent.run_sync('search for the best 20 coffee shop in San Francisco. Exclude YouTube as the source')
+response = google_search_agent.run_sync('search for the best 20 japanese restaurants in San Francisco. Exclude YouTube as the source')
 print(response.output)
