@@ -156,15 +156,62 @@ class InvestmentAgent:
             'Real Estate': ['prop tech', 'real estate technology', 'smart cities'],
             'Materials': ['sustainable materials', 'recycling', 'green technology']
         }
+        # S&P 500 stocks - Top companies by market cap and influence
         self.stock_universe = [
-            'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'TSLA', 'META', 'NFLX', 'ADBE', 'CRM',
-            'JNJ', 'PFE', 'UNH', 'ABBV', 'TMO', 'DHR', 'LLY', 'ABT', 'BMY', 'AMGN',
-            'XOM', 'CVX', 'COP', 'EOG', 'SLB', 'ENPH', 'SEDG', 'FSLR', 'TSLA', 'NEE',
+            # Technology (Mega Cap)
+            'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA', 'NFLX', 'ADBE', 'CRM',
+            'ORCL', 'CSCO', 'INTC', 'AMD', 'QCOM', 'AVGO', 'TXN', 'MU', 'INTU', 'ADP',
+            'IBM', 'NOW', 'SNPS', 'KLAC', 'LRCX', 'ADI', 'CDNS', 'MCHP', 'MRVL', 'WDAY',
+            
+            # Healthcare
+            'JNJ', 'UNH', 'PFE', 'ABBV', 'TMO', 'DHR', 'LLY', 'ABT', 'BMY', 'AMGN',
+            'CVS', 'CI', 'ANTM', 'GILD', 'REGN', 'VRTX', 'BIIB', 'HUM', 'ISRG', 'BDX',
+            'DVA', 'HCA', 'CNC', 'AET', 'WBA', 'CAH', 'MCK', 'ABC', 'ZTS', 'ALGN',
+            
+            # Financial Services
             'JPM', 'BAC', 'WFC', 'GS', 'MS', 'BLK', 'V', 'MA', 'AXP', 'C',
-            'PG', 'KO', 'PEP', 'WMT', 'HD', 'MCD', 'DIS', 'NKE', 'SBUX', 'TGT',
+            'USB', 'PNC', 'TFC', 'COF', 'SCHW', 'CB', 'AIG', 'MET', 'PRU', 'ALL',
+            'TRV', 'AFL', 'HIG', 'PFG', 'BEN', 'IVZ', 'TROW', 'AMP', 'NTRS', 'STT',
+            
+            # Consumer Discretionary
+            'AMZN', 'TSLA', 'HD', 'MCD', 'DIS', 'NKE', 'SBUX', 'TGT', 'LOW', 'TJX',
+            'BKNG', 'MAR', 'HLT', 'CMG', 'YUM', 'DPZ', 'SBUX', 'ULTA', 'ROST', 'TJX',
+            'ORLY', 'AZO', 'KMX', 'LVS', 'WYNN', 'MGM', 'CCL', 'RCL', 'NCLH', 'UAL',
+            
+            # Consumer Staples
+            'PG', 'KO', 'PEP', 'WMT', 'COST', 'PM', 'MO', 'MDLZ', 'GIS', 'K',
+            'HSY', 'SJM', 'CAG', 'KMB', 'CL', 'EL', 'ULTA', 'DG', 'DLTR', 'FIVE',
+            'KR', 'SFM', 'SPLS', 'BBY', 'GME', 'TSCO', 'ORLY', 'AZO', 'KMX', 'CVNA',
+            
+            # Energy
+            'XOM', 'CVX', 'COP', 'EOG', 'SLB', 'ENPH', 'SEDG', 'FSLR', 'NEE', 'DUK',
+            'SO', 'D', 'NEE', 'AEP', 'XEL', 'DTE', 'ED', 'PEG', 'WEC', 'CMS',
+            'CNP', 'AEE', 'EIX', 'PCG', 'SRE', 'VLO', 'MPC', 'PSX', 'VLO', 'MPC',
+            
+            # Industrials
             'CAT', 'DE', 'BA', 'GE', 'MMM', 'HON', 'UPS', 'FDX', 'LMT', 'RTX',
+            'NOC', 'GD', 'LHX', 'TDG', 'TXT', 'EMR', 'ETN', 'ITW', 'DOV', 'XYL',
+            'PH', 'AME', 'FTV', 'IEX', 'PNR', 'DCI', 'GWW', 'FAST', 'GPC', 'WSO',
+            
+            # Real Estate
             'AMT', 'PLD', 'CCI', 'EQIX', 'DLR', 'PSA', 'O', 'SPG', 'VICI', 'WELL',
-            'LIN', 'APD', 'FCX', 'NEM', 'BHP', 'RIO', 'VALE', 'AA', 'X', 'NUE'
+            'EQR', 'AVB', 'MAA', 'ESS', 'UDR', 'CPT', 'AIV', 'BXP', 'VNO', 'SLG',
+            'KIM', 'FRT', 'REG', 'MAC', 'PEAK', 'ARE', 'BMRN', 'HST', 'PK', 'AHT',
+            
+            # Materials
+            'LIN', 'APD', 'FCX', 'NEM', 'BHP', 'RIO', 'VALE', 'AA', 'X', 'NUE',
+            'SHW', 'ECL', 'APTV', 'ALB', 'LVS', 'WYNN', 'MGM', 'CCL', 'RCL', 'NCLH',
+            'DOW', 'DD', 'EMN', 'LYB', 'BLL', 'IP', 'PKG', 'WRK', 'SEE', 'BMS',
+            
+            # Communication Services
+            'GOOGL', 'META', 'NFLX', 'DIS', 'CMCSA', 'CHTR', 'VZ', 'T', 'TMUS', 'ATVI',
+            'EA', 'TTWO', 'ZNGA', 'MTCH', 'SNAP', 'PINS', 'TWTR', 'LYV', 'FOX', 'NWSA',
+            'PARA', 'WBD', 'LUMN', 'CTL', 'VZ', 'T', 'TMUS', 'S', 'LBRDK', 'LBRDA',
+            
+            # Utilities
+            'NEE', 'DUK', 'SO', 'D', 'AEP', 'XEL', 'DTE', 'ED', 'PEG', 'WEC',
+            'CMS', 'CNP', 'AEE', 'EIX', 'PCG', 'SRE', 'AEP', 'XEL', 'DTE', 'ED',
+            'PEG', 'WEC', 'CMS', 'CNP', 'AEE', 'EIX', 'PCG', 'SRE', 'VLO', 'MPC'
         ]
 
     def get_headline_sentiment(self, symbol: str) -> Dict[str, Any]:
